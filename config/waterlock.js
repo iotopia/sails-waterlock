@@ -44,7 +44,7 @@ module.exports.waterlock = {
           vars:{}
         }
       },
-      createOnNotFound: true
+      createOnNotFound: false
     }
   ],
 
@@ -103,7 +103,9 @@ module.exports.waterlock = {
       // obj - {controller: 'blog', action: 'post'}
       // string - 'custom json response string'
       // default - 'default'
-      success: 'default',
+      success: 'jwt',
+      // default will return id, createdAt, updatedAt, auth { id, email, password, createdAt, updatedAt }
+      // jwt will return expires, token
 
       // This can be any one of the following
       //
