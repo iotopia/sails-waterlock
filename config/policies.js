@@ -27,9 +27,10 @@ module.exports.policies = {
   ***************************************************************************/
 
   '*': true,
-  
+
   TestController: {
-  	open: true,
+    index: true,
+  	open: ['notAuthorize'],
   	auth: ['sessionAuth'],
   	token: ['hasJsonWebToken']
   }
