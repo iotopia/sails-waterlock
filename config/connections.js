@@ -45,7 +45,7 @@ module.exports.connections = {
     host: process.env.IP,
     user: 'ravuthz', //optional
     password: '123123', //optional
-    database: 'sails_tutor_service' //optional
+    database: 'sails_waterlock' //optional
   },
 
   /***************************************************************************
