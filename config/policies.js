@@ -30,9 +30,91 @@ module.exports.policies = {
 
   TestController: {
     index: true,
+    create: true,
+    update: true,
   	open: ['notAuthorize'],
   	auth: ['sessionAuth'],
   	token: ['hasJsonWebToken']
+  },
+  
+  SubjectController: {
+  	show: true,
+  	index: true,
+  	
+  	create: ['hasJsonWebToken'],
+  	update: ['hasJsonWebToken'],
+  	destroy: ['hasJsonWebToken']
+  },
+  
+  ScheduleController: {
+    show: true,
+  	index: true,
+  	
+  	create: ['hasJsonWebToken'],
+  	update: ['hasJsonWebToken'],
+  	destroy: ['hasJsonWebToken']
+  },
+  
+  PostController: {
+    show: true,
+  	index: true,
+  	
+  	create: ['hasJsonWebToken'],
+  	update: ['hasJsonWebToken'],
+  	destroy: ['hasJsonWebToken']
+  },
+  
+  RateController: {
+    show: true,
+  	index: true,
+  	
+  	create: ['hasJsonWebToken'],
+  	update: ['hasJsonWebToken'],
+  	destroy: ['hasJsonWebToken']
+  },
+  
+  CommentController: {
+    show: true,
+  	index: true,
+  	
+  	create: ['hasJsonWebToken'],
+  	update: ['hasJsonWebToken'],
+  	destroy: ['hasJsonWebToken']
+  },
+  
+  AuthController: {
+    show: true,
+  	index: true,
+  	create: ['hasJsonWebToken'],
+  	update: ['hasJsonWebToken'],
+  	destroy: ['hasJsonWebToken']
+  },
+  
+  UserController: {
+    show: true,
+  	index: true,
+  	
+  	create: ['hasJsonWebToken'],
+  	update: ['hasJsonWebToken'],
+  	destroy: ['hasJsonWebToken']
+  },
+  
+  PostRateController: {
+    show: true,
+  	index: true,
+  	
+  	create: ['hasJsonWebToken'],
+  	update: ['hasJsonWebToken'],
+  	destroy: ['hasJsonWebToken']
+  },
+  
+  SchedulePostController: {
+    show: true,
+  	index: true,
+  	
+  	create: ['hasJsonWebToken'],
+  	update: ['hasJsonWebToken'],
+  	destroy: ['hasJsonWebToken']
   }
 
   /***************************************************************************
