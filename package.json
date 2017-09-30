@@ -37,5 +37,8 @@
     "url": "git://github.com/ubuntu/sails-waterlock.git"
   },
   "author": "ubuntu",
-  "license": ""
+  "license": "",
+  "devDependencies": {
+    "swagger-ui": "^2.2.10"
+  }
 }
